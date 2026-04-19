@@ -109,6 +109,18 @@ header img {
     border-radius: 10px;  
     max-width: 500px;  
 }  
+
+/* 🔥 FIX ANIMASI (TAMBAHAN) */
+.section, .card, .box {  
+    opacity: 0;  
+    transform: translateY(30px);  
+    transition: all 0.8s ease;  
+}  
+
+.show {  
+    opacity: 1 !important;  
+    transform: translateY(0) !important;  
+}  
 </style>  
   
 </head>  
@@ -195,11 +207,10 @@ header img {
     <div class="card">  
         <h2>Pendaftaran</h2>  
 
-        <!-- tombol tambahan -->
         <a href="https://forms.gle/stjBjfM5SHY429xj9"  
         class="btn btn-primary" target="_blank">  
         Daftar Sekarang  
-        </a>
+        </a>  
 
     </div>  
 </div>  
@@ -233,6 +244,19 @@ window.addEventListener('scroll', () => {
         started = true;  
     }  
 });  
+
+/* ✨ ANIMASI SCROLL FIX */
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".section, .card, .box").forEach(el => {
+    observer.observe(el);
+});
 </script>  
   
 </body>  
