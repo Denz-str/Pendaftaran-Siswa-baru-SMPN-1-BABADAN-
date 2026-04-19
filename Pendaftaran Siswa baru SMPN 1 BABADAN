@@ -1,0 +1,239 @@
+<!DOCTYPE html>  
+<html lang="id">  
+<head>  
+<meta charset="UTF-8">  
+<title>Website Sekolah</title>  
+  
+<style>  
+body {  
+    margin: 0;  
+    font-family: Arial;  
+    background: radial-gradient(circle at center, #1a0033, #000);  
+    color: white;  
+}  
+  
+header {  
+    display: flex;  
+    align-items: center;  
+    padding: 15px;  
+}  
+  
+header img {  
+    width: 85px;  
+    margin-right: 10px;  
+}  
+  
+.hero {  
+    text-align: center;  
+    padding: 100px 20px;  
+}  
+  
+.tag {  
+    border: 1px solid #b366ff;  
+    padding: 10px 20px;  
+    border-radius: 8px;  
+    color: #b366ff;  
+    display: inline-block;  
+}  
+  
+.hero h1 {  
+    font-size: 50px;  
+    color: #b366ff;  
+}  
+  
+.hero p {  
+    color: #ccc;  
+}  
+  
+.btn {  
+    display: inline-block;  
+    margin-top: 20px;  
+    padding: 12px 25px;  
+    border-radius: 8px;  
+    text-decoration: none;  
+    transition: 0.3s;  
+}  
+  
+.btn-primary {  
+    background: linear-gradient(45deg, #9933ff, #6600cc);  
+    color: white;  
+}  
+  
+.btn-outline {  
+    border: 1px solid #b366ff;  
+    color: #b366ff;  
+}  
+  
+.btn-primary:hover {  
+    box-shadow: 0 0 10px #a64dff, 0 0 20px #a64dff, 0 0 40px #7a00ff;  
+    transform: scale(1.05);  
+}  
+  
+.btn-outline:hover {  
+    box-shadow: 0 0 10px #b366ff;  
+    transform: scale(1.05);  
+}  
+  
+.stats {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: center;  
+    margin-top: 40px;  
+}  
+  
+.box {  
+    background: #111;  
+    margin: 10px;  
+    padding: 20px;  
+    border-radius: 10px;  
+    width: 140px;  
+    text-align: center;  
+}  
+  
+.box h2 {  
+    color: #b366ff;  
+}  
+  
+.box p {  
+    color: #ccc;  
+}  
+  
+.section {  
+    padding: 40px 20px;  
+}  
+  
+.card {  
+    background: #111;  
+    padding: 15px;  
+    margin: 10px auto;  
+    border-radius: 10px;  
+    max-width: 500px;  
+}  
+</style>  
+  
+</head>  
+<body>  
+  
+<header>  
+    <img src="SMPN.png">  
+    <h2>SMPN 1 BABADAN</h2>  
+</header>  
+  
+<div class="hero">  
+    <div class="tag">SEKOLAH MENENGAH PERTAMA NEGERI</div>  
+  
+    <h1>SMPN 1 BABADAN</h1>  
+    <p>Ponorogo • Jawa Timur</p>  
+    <p>Membentuk generasi unggul, berkarakter, dan berdaya saing tinggi melalui pendidikan modern berstandar nasional.</p>  
+  
+    <a href="#program" class="btn btn-primary">Lihat Program</a>  
+    <a href="#kontak" class="btn btn-outline">Hubungi Kami</a>  
+  
+    <div class="stats">  
+  
+        <div class="box">  
+            <h2 class="counter" data-target="800">0</h2>  
+            <p>Siswa Aktif</p>  
+        </div>  
+  
+        <div class="box">  
+            <h2 class="counter" data-target="55">0</h2>  
+            <p>Tenaga Pengajar</p>  
+        </div>  
+  
+        <div class="box">  
+            <h2 class="counter" data-target="10">0</h2>  
+            <p>Mata Pelajaran</p>  
+        </div>  
+  
+        <div class="box">  
+            <h2 class="counter" data-target="10">0</h2>  
+            <p>Ekstrakurikuler</p>  
+        </div>  
+  
+        <div class="box">  
+            <h2 class="counter" data-target="1983">0</h2>  
+            <p>Tahun Berdiri</p>  
+        </div>  
+  
+        <div class="box">  
+            <h2 class="counter" data-target="98">0</h2>  
+            <p>% Kelulusan</p>  
+        </div>  
+  
+    </div>  
+</div>  
+  
+<div class="section" id="program">  
+    <div class="card">  
+        <h2>Prestasi 🏅</h2>  
+        <p>Mboh prestasi ne akeh neng lemari males aku ngitung.</p>  
+    </div>  
+  
+    <div class="card">  
+        <h2>Ekstrakurikuler 📢</h2>  
+        <p>Futsal, Pramuka, Voli, Tahfidzs, Basket, English Club, Dll..</p>  
+    </div>  
+</div>  
+  
+<div class="section">  
+    <div class="card">  
+        <h2>Event Terkini</h2>  
+
+        <img src="pengajian.jpg" width="100%" style="border-radius:10px;">  
+
+        <iframe width="100%" height="200"  
+        src="https://www.youtube.com/embed/TAnbWvBiBlo"  
+        frameborder="0" allowfullscreen  
+        style="border-radius: 10px; margin-top:10px;">  
+        </iframe>  
+
+    </div>  
+</div>  
+  
+<div class="section" id="kontak">  
+    <div class="card">  
+        <h2>Pendaftaran</h2>  
+
+        <!-- tombol tambahan -->
+        <a href="https://forms.gle/stjBjfM5SHY429xj9"  
+        class="btn btn-primary" target="_blank">  
+        Daftar Sekarang  
+        </a>
+
+    </div>  
+</div>  
+  
+<script>  
+const counters = document.querySelectorAll('.counter');  
+let started = false;  
+  
+window.addEventListener('scroll', () => {  
+    const stats = document.querySelector('.stats');  
+    const top = stats.getBoundingClientRect().top;  
+    const screenHeight = window.innerHeight;  
+  
+    if (top < screenHeight && !started) {  
+        counters.forEach(counter => {  
+            let target = +counter.getAttribute('data-target');  
+            let count = 0;  
+  
+            let update = () => {  
+                count += target / 100;  
+                if (count < target) {  
+                    counter.innerText = Math.floor(count);  
+                    requestAnimationFrame(update);  
+                } else {  
+                    counter.innerText = target;  
+                }  
+            };  
+  
+            update();  
+        });  
+        started = true;  
+    }  
+});  
+</script>  
+  
+</body>  
+</html>
